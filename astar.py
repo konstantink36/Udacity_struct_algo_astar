@@ -88,6 +88,7 @@ def shortest_path(M,start,goal):
     path = []
     current_node = queue[start]    # start node 
     current_node.fvalue = 0
+    current_node.gvalue = 0
     end_node = queue[goal]         # end node 
 
     # if start node = end node, put only that node in the path
