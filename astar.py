@@ -67,12 +67,6 @@ def shortest_path(M,start,goal):
     # create graph object by using the road map. Add edge objects to nodes and store the distance in each edge
     graph = Graph(nodelist)
     
-    #for key in M.roads:					     
-        #for x in range(len(M.roads[key])):                 
-            #value = M.roads[key][x]      
-            #distance_ = graph.nodes[key].getdistance(graph.nodes[value])
-            #graph.add_edge(graph.nodes[key], graph.nodes[value], distance_)
-
     for index, list in enumerate(M.roads):
         for x in range(len(list)):
             value = list[x]
